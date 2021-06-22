@@ -1,0 +1,46 @@
+﻿<Window
+    x:Class="MVVMSample011.Views.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:MVVMSample011.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="http://schemas.modernwpf.com/2019"
+    xmlns:vm="clr-namespace:MVVMSample011.ViewModels"
+    Title="MainWindow"
+    Width="400"
+    Height="300"
+    ui:WindowHelper.UseModernWindowStyle="True"
+    ResizeMode="CanResizeWithGrip"
+    mc:Ignorable="d">
+
+    <Window.DataContext>
+        <vm:MainWindowViewModel />
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ContentControl Margin="10" Content="{Binding CurrentPage}" />
+
+        <StackPanel
+            Grid.Row="1"
+            HorizontalAlignment="Right"
+            Orientation="Horizontal">
+            <Button
+                Margin="10"
+                Padding="20,5"
+                Command="{Binding PageBackCommand}"
+                Content="&lt; Back" />
+            <Button
+                Margin="10"
+                Padding="20,5"
+                Command="{Binding PageNextCommand}"
+                Content="Next &gt;" />
+        </StackPanel>
+    </Grid>
+
+</Window>
