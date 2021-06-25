@@ -9,11 +9,11 @@ namespace MVVMSample011.ViewModels
 {
     public class MainWindowViewModel : ObservableObject
 {
-        private PageViewModwlBase _currentPage;
+        private PageViewModelBase _currentPage;
         /// <summary>
         /// Current page
         /// </summary>
-        public PageViewModwlBase CurrentPage
+        public PageViewModelBase CurrentPage
         {
             get => _currentPage;
             set
@@ -33,7 +33,7 @@ namespace MVVMSample011.ViewModels
         /// <summary>
         /// Page management
         /// </summary>
-        private List<PageViewModwlBase> _pages;
+        private List<PageViewModelBase> _pages;
 
         public IRelayCommand PageBackCommand { get; }
         public IRelayCommand PageNextCommand { get; }
@@ -43,7 +43,7 @@ namespace MVVMSample011.ViewModels
         /// </summary>
         public MainWindowViewModel()
         {
-            _pages = new List<PageViewModwlBase>();
+            _pages = new List<PageViewModelBase>();
             _pages.Add(StartPage = new StartPageViewModel());
             _pages.Add(Setting1Page = new Setting1PageViewModel());
             _pages.Add(Setting2Page = new Setting2PageViewModel());

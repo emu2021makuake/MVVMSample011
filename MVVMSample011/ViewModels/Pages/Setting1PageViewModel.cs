@@ -1,6 +1,6 @@
 ﻿namespace MVVMSample011.ViewModels.Pages
 {
-    public class Setting1PageViewModel : PageViewModwlBase
+    public class Setting1PageViewModel : PageViewModelBase
     {
         private bool _check1;
         public bool Check1

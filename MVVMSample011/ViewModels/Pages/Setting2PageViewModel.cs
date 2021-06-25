@@ -1,6 +1,6 @@
 ﻿namespace MVVMSample011.ViewModels.Pages
 {
-    public class Setting2PageViewModel : PageViewModwlBase
+    public class Setting2PageViewModel : PageViewModelBase
     {
         private string _text1;
         public string Text1

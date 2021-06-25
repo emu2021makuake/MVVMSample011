@@ -1,6 +1,6 @@
 ﻿namespace MVVMSample011.ViewModels.Pages
 {
-    public class EndPageViewModel : PageViewModwlBase
+    public class EndPageViewModel : PageViewModelBase
     {
         private string _settingListText;
         /// <summary>

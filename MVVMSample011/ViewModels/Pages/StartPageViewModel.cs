@@ -1,6 +1,6 @@
 ﻿namespace MVVMSample011.ViewModels.Pages
 {
-    public class StartPageViewModel : PageViewModwlBase
+    public class StartPageViewModel : PageViewModelBase
     {
         private string _message;
         /// <summary>

@@ -61,7 +61,7 @@
     </Compile>
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\Pages\EndPageViewModel.cs" />
-    <Compile Include="ViewModels\Pages\PageViewModwlBase.cs" />
+    <Compile Include="ViewModels\Pages\PageViewModelBase.cs" />
     <Compile Include="ViewModels\Pages\Setting1PageViewModel.cs" />
     <Compile Include="ViewModels\Pages\Setting2PageViewModel.cs" />
     <Compile Include="ViewModels\Pages\StartPageViewModel.cs" />
